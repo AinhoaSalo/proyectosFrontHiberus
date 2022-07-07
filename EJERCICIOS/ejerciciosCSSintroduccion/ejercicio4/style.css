@@ -1,0 +1,40 @@
+/* .padre{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    width: 190px;
+    background-color: darkgray;
+    float: left;
+    border: black 1px solid;
+    font-size: 20px;
+}
+
+img{
+    width: 15px;
+}
+
+.imagen:hover{
+    background-image: url(./images/flecha2.png);
+} */
+
+table, td{
+    border: thin solid;
+    border-collapse: collapse;
+}
+
+td{
+    background: #f5f5f5 url(./images/flecha1.png) no-repeat;
+    background-size: contain;
+    padding: 10px 10px 10px 40px;
+    margin: 0;
+}
+
+td:hover{
+    background: #E4E4E4 url(./images/flecha2.png) no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}
+
+

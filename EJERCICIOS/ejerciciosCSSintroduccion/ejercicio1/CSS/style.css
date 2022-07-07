@@ -1,0 +1,63 @@
+h1 {
+    color: teal;
+}
+
+h2 {
+    color: blue;
+}
+
+.colorRojo {
+    color: red;  
+}
+
+.colorAmarillo {
+    color: rgb(197, 197, 123);
+}
+
+.colorYsubr {
+    color: red;
+    text-decoration: underline;
+}
+
+.colorAzul {
+    color: rgb(0, 140, 255);
+}
+
+.colorMorado {
+    color: blueviolet;
+}
+
+table {
+    border-collapse: collapse;
+    border: black 1px solid;
+    
+}
+
+.celdaAmarilla{
+    color: rgb(228, 157, 26);
+    font-weight: bold;
+}
+
+.celdaRoja{
+    color: red;
+    font-weight: bold;
+}
+
+.celdaVerde{
+    color: green;
+}
+
+.parrafosOliva{
+    color: darkgoldenrod;
+}
+
+.span1{
+    color: palevioletred;
+    font-weight: bold;
+}
+
+.span2{
+    color: green;
+    text-decoration: underline;
+}
+

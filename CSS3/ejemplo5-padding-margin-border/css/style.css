@@ -1,0 +1,22 @@
+body{
+    border: thin solid red;
+}
+
+div{
+    margin-bottom: 15px;
+}
+
+#bloque div:last-child{
+    margin-bottom: 0px;
+}
+
+#sec1{
+    /*box-sizing: content-box; CSS por defecto tiene esta propiedad*/
+    box-sizing: border-box; /*El padding se aplica hacia dentro y no se agranda*/
+    border-width: 1px;
+    border-color: blue;
+    border-style: solid;
+    width: 20%;
+    padding: 20px; 
+}
+

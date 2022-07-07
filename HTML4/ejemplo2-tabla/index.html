@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  </head>
+  <body>
+    <table border="4"> 
+      <tr> <!--Table row-->
+        <th>Columna 1</th> <!--Table head-->
+        <th>Columna 2</th>
+        <th>Columna 3</th>
+        <th>Columna 4</th>
+      </tr>
+
+      <tr>
+        <td>Dato</td> <!--Table data-->
+        <td>Dato</td>
+        <td>Dato</td>
+        <td>Dato</td>
+      </tr>
+
+      <tr>
+        <td>Dato</td> <!--Table data-->
+        <td>Dato</td>
+        <td>Dato</td>
+        <td>Dato</td>
+      </tr>
+    </table>
+
+    <h2>Combinar celdas</h2>
+    <table border="4"> 
+      <tr> <!--Table row-->
+        <th>Columna 1</th> <!--Table head-->
+        <th>Columna 2</th>
+        <th>Columna 3</th>
+        <th>Columna 4</th>
+      </tr>
+
+      <tr>
+        <td colspan="2">Dato</td> <!--Table data-->
+        <!--Aquí había un td pero al usar colspan (esto es para columnas) sobraba una y hay que borrarlo (fila 43)-->
+        <td>Dato</td>
+        <td rowspan="2">Dato</td>
+      </tr>
+
+      <tr>
+        <td>Dato</td> <!--Table data-->
+        <td>Dato</td>
+        <td>Dato</td>
+        <!--Aquí había un td pero al usar rowspan (esto es para filas) sobraba una y hay que borrarlo (fila 46)-->
+      </tr>
+    </table>
+
+    <h2>Tabla con título</h2>
+    <table border="4"> 
+      <caption align="bottom">Titulo de tabla</caption>
+      <tr> <!--Table row-->
+        <th>Columna 1</th> <!--Table head-->
+        <th>Columna 2</th>
+        <th>Columna 3</th>
+        <th>Columna 4</th>
+      </tr>
+
+      <tr>
+        <td colspan="2">Dato</td> <!--Table data-->
+        <!--Aquí había un td pero al usar colspan (esto es para columnas) sobraba una y hay que borrarlo (fila 43)-->
+        <td>Dato</td>
+        <td rowspan="2">Dato</td>
+      </tr>
+
+      <tr>
+        <td>Dato</td> <!--Table data-->
+        <td>Dato</td>
+        <td>Dato</td>
+        <!--Aquí había un td pero al usar rowspan (esto es para filas) sobraba una y hay que borrarlo (fila 46)-->
+      </tr>
+    </table>
+  </body>
+</html>

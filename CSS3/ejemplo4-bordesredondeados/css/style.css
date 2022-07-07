@@ -1,0 +1,33 @@
+div{
+    width: 50%;
+    margin: 10px;
+    height: 150px;
+    background-color: rgb(155, 190, 155);
+}
+
+#sec1{
+    border-radius: 20px;
+}
+
+#sec2{
+    border-radius: 100px;
+    width: 200px;
+    height: 200px;
+}
+
+#sec3{
+    border-radius: 50px/20px;
+}
+
+#sec4{
+    border-radius: 20px 50px;
+}
+
+#sec5{
+    border-radius: 20px 50px 70px 10px;
+}
+
+#sec6{
+    border-radius: 20px 50px 70px 10px /*Valor X*/ / 40px 25px 80px 50px /*Valor Y*/ ;
+}
+

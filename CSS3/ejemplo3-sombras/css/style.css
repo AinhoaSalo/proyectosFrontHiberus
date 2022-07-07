@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Splash&display=swap'); 
+
+#titulo1{
+    text-shadow: 5px 3px 3px darkgrey;
+    font-family: "Splash";
+}
+
+#titulo2{
+    text-shadow: 3px 3px 1px darkgrey;
+}
+
+#titulo3{
+    text-shadow: -3px 3px 1px darkgrey;
+}
+
+#titulo4{
+    text-shadow: -3px -3px 5px darkgrey;
+}
+
+#cuadro1{
+    width: 50%;
+    background-color: lightgoldenrodyellow;
+    padding: 10px;
+    box-shadow: 15px 15px 10px rgb(206, 206, 172);
+}
+
+#cuadro2{
+    width: 50%;
+    background-color: rgb(210, 239, 250);
+    margin: 10px 0;
+    padding: 10px;
+    box-shadow: 10px 10px 10px rgb(148, 176, 182),
+                15px 15px 10px rgb(91, 113, 117);
+}
+
+/*Con esta URL si que funciona Splash en el font-face: https://fonts.gstatic.com/s/splash/v1/KtksAL2RZoDkbU6Ro_nH.woff2) format('woff2'
+/

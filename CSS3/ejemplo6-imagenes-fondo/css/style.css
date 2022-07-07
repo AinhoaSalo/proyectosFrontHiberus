@@ -1,0 +1,17 @@
+div{
+    width: 50%;
+    min-height: 300px;
+    background-color: bisque;
+    margin: 50px;
+}
+
+#cuadro1{
+    background-image: url(../images/logo.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#cuadro2{
+    background: url(../images/Hiberus.jpg) top center/200px 200px no-repeat;
+}

@@ -1,0 +1,35 @@
+.div{
+    margin: 10px;
+    width: 60%;
+}
+
+.borderBlack{
+    border: thin solid black;
+}
+
+.borderRed{
+    border: 3px dashed red;
+}
+
+.background {
+    background-color: rgb(199, 197, 197);
+}
+
+.borderPadding2 {
+    padding: 5px 20px 20px 40px;
+}
+
+.borderPaddingMargin2{
+    padding: 5px 20px 30px 40px;
+    margin: 50px 20px 10px;
+}
+
+.paddingMargin2{
+    margin: 15px 10px 10px;
+    padding: 15px 10px 10px;
+}
+
+.margin2{
+    margin:  50px 20px 10px;
+}
+
