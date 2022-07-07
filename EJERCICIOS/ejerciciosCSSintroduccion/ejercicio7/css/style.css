@@ -1,0 +1,14 @@
+ul{
+    list-style: none;
+}
+
+li{
+    /* transition: font-weight 1s,padding-left 1s, font-size 1s ; */
+    transition: all 1s;
+}
+
+li:hover{
+    font-weight: bolder;
+    padding-left: 10px;
+    font-size: 1.1em;
+}
