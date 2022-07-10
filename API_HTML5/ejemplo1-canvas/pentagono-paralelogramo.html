@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="lienzo" width="1200px" height="600px">
+        Su navegador no soporta HTML5
+    </canvas>
+    <script>
+        //Obtener la referencia al objeto canvas
+        let canvas = document.getElementById('lienzo');
+
+        // Acceder al contexto del canvas
+        let ctxCanvas = canvas.getContext('2d');
+
+        // Dibujar pentagono
+        ctxCanvas.fillStyle ='orange'
+        ctxCanvas.moveTo(75,5);
+        ctxCanvas.lineTo(135, 55);
+        ctxCanvas.lineTo(105, 125);
+        ctxCanvas.lineTo(40, 125);
+        ctxCanvas.lineTo(15, 55);
+        ctxCanvas.fill();
+
+        // Dibujar pentagono
+        ctxCanvas.fillStyle ='blue'
+        ctxCanvas.moveTo(350,50);
+        ctxCanvas.lineTo(235, 50);
+        ctxCanvas.lineTo(155, 110);
+        ctxCanvas.lineTo(270, 110);
+        ctxCanvas.fill();
+
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="lienzo" width="1200px" height="600px">
+        Su navegador no soporta HTML5
+    </canvas>
+
+    <script>
+        //Obtener la referencia al objeto canvas
+        let canvas = document.getElementById('lienzo');
+
+        // Acceder al contexto del canvas
+        let ctxCanvas = canvas.getContext('2d');
+
+        //Pintar un rectangulo rojo
+        ctxCanvas.fillStyle='rgb(255,0,0)';
+        ctxCanvas.fillRect(200, 300, 200, 200);
+
+        //Pintar un rectangulo con perimetro azul
+        ctxCanvas.strokeStyle = 'blue';
+        ctxCanvas.strokeRect(250,10, 200,200); // coordenada x, y, ancho, alto
+
+        //Pintar el rectangulo amarillo con borde verde
+        ctxCanvas.fillStyle='yellow';
+        ctxCanvas.strokeStyle = 'green';
+        ctxCanvas.fillRect(500, 10, 200, 200);
+        ctxCanvas.strokeRect(500,10, 200,200);
+
+       //Circulo rosa
+       ctxCanvas.fillStyle='pink';
+       ctxCanvas.arc(100,300,50, 0,2 * Math.PI);
+       ctxCanvas.fill();
+
+       //Pokeball
+        ctxCanvas.fillStyle = 'red';
+        ctxCanvas.beginPath()
+        ctxCanvas.arc(110, 100, 50, 0, 2 * Math.PI)
+        ctxCanvas.fill()
+
+        ctxCanvas.fillStyle = 'white';
+        ctxCanvas.beginPath()
+        ctxCanvas.arc(110, 100, 50, 0, 1 * Math.PI)
+        ctxCanvas.fill()
+
+        ctxCanvas.fillStyle = "black";
+        ctxCanvas.fillRect(60, 98, 100, 5);
+
+        ctxCanvas.fillStyle = 'black';
+        ctxCanvas.beginPath()
+        ctxCanvas.arc(110, 100, 10, 0, 2 * Math.PI)
+        ctxCanvas.fill()
+
+        ctxCanvas.fillStyle = 'white';
+        ctxCanvas.beginPath()
+        ctxCanvas.arc(110, 100, 9, 0, 2 * Math.PI)
+        ctxCanvas.fill()
+
+
+
+
+    </script>
+</body>
+</html>
