@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div>
+        <label for="nameTxt">FIRST NAME</label>
+        <input type="text" id="nameTxt" name="name" placeholder="Jonathan">
+    
+        <label for="lastNameTxt">LAST NAME</label>
+        <input type="text" id="lastNameTxt" name="lastName" placeholder="Doe">
+
+        <label for="email">EMAIL ADDRESS</label>
+        <input type="email" id="email" name="email" placeholder="jon@doe.com">
+
+        <label for="country">COUNTRY</label>
+        <select id="countries">
+            <option>Choose a country</option>
+            <option>Spain</option>
+            <option>Italy</option>
+            <option>France</option>
+            <option>Iceland</option>
+            <option>Irland</option>
+        </select>
+
+        <label for="biography">BIOGRAPHY</label>
+        <input type="text" id="biography" class="inputsBig">
+    </div>
+
+    <div>
+        <!--PREGUNTAR SI EL NAME ES OBLIGATORIO-->
+        <label for="phoneNumber">PHONE NUMBER</label>
+        <input type="tel" name="phone" id="phoneNumber" pattern="[6-7]{1}[0-9]{8}" title="9 digitos y comenzar por 6 o 7">
+
+        <label for="affiliations">AFFILIATIONS</label>
+        <input type="text" id="affiliations" class="inputsBig">
+
+        <label for="occupation">OCCUPATION</label>
+        <select id="occupation">
+            <option>Choose an occupation</option>
+            <option>Frontend</option>
+            <option>Backend</option>
+            <option>SRE</option>
+            <option>Cloud</option>
+        </select>
+
+        <label for="catName">CAT'S NAME</label>
+        <input type="text" id="catName" placeholder="Kitty">
+
+        <label for="gadget">FAVORITE GADGET</label>
+        <input type="text" id="gadget" placeholder="Annoy-a-tron">
+    </div>
+
+    <div>
+        <label for="talent">TYPE OF TALENT</label>
+        <select id="talent">
+            <option>Choose an talent</option>
+            <option>fly in the sky</option>
+            <option>to be invisible</option>
+            <option>Read Minds</option>
+            <option>
+                Learn to manage your emotions</option>
+        </select>
+
+        <label for="drink">FAVORITE DRINK</label>
+        <input type="text" id="drink" placeholder="Green Tea">
+
+        <label for="specialPower">SPECIAL POWER</label>
+        <input type="text" id="specialPower" placeholder="Anti-gravity">
+
+        <label for="weapon">WEAPON OF CHOICE</label>
+        <input type="text" id="weapon" placeholder="Lightsaber">
+
+        <label for="comment">COMMENTS</label>
+        <input type="text" id="comment" class="inputsBig">
+    </div>
+
+</body>
+</html>

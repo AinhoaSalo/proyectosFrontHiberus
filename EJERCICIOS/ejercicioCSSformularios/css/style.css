@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #60a5cc;
+    color: white;
+    font-size: 15px;
+}
+
+div{
+    margin: 1%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+input{
+    margin-bottom: 5%;
+    padding: 3%;
+    background-color: #60a5cc;
+    border: white solid 2px;
+    color: rgb(55, 94, 179);
+}
+
+::placeholder{
+    color: rgba(47, 83, 138, 0.801);
+}
+
+select{
+    background: linear-gradient( rgba(255, 255, 255, 0.46), #5294b1, rgba(255, 255, 255, 0.46)); 
+    border: rgba(255, 255, 255, 0.521) solid 2px;
+    color: white;
+    margin-bottom: 5%;
+    border-radius: 5px;
+}
+
+.inputsBig{
+    box-sizing: border-box;
+    padding: 50px;
+}
