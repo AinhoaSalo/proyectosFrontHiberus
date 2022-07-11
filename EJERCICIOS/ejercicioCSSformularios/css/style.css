@@ -33,6 +33,12 @@ select{
     border-radius: 5px;
 }
 
+
+option{
+    background-color: #5294b1;
+
+}
+
 .inputsBig{
     box-sizing: border-box;
     padding: 50px;
