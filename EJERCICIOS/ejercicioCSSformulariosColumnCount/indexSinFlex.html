@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <section>
+    <form action="">
         <label for="nameTxt">FIRST NAME</label>
         <input type="text" id="nameTxt" name="name" placeholder="Jonathan">
     
@@ -29,16 +29,14 @@
         </select>
 
         <label for="biography">BIOGRAPHY</label>
-        <input type="textarea" id="biography" class="inputsBig">
-    </section>
+        <input type="text" id="biography" class="inputsBig">
 
-    <section>
         <!--PREGUNTAR SI EL NAME ES OBLIGATORIO-->
         <label for="phoneNumber">PHONE NUMBER</label>
         <input type="tel" id="phoneNumber" name="phone" pattern="[6-7]{1}[0-9]{8}" title="9 digitos y comenzar por 6 o 7" placeholder="+351 999 999">
 
         <label for="affiliations">AFFILIATIONS</label>
-        <input type="textarea" id="affiliations" name="affiliations" class="inputsBig">
+        <input type="text" id="affiliations" name="affiliations" class="inputsBig">
 
         <label for="occupation">OCCUPATION</label>
         <select id="occupation">
@@ -54,9 +52,7 @@
 
         <label for="gadget">FAVORITE GADGET</label>
         <input type="text" id="gadget" name="gadget" placeholder="Annoy-a-tron">
-    </section>
-
-    <section>
+    
         <label for="talent">TYPE OF TALENT</label>
         <select id="talent">
             <option disabled="disable" selected="selected">Choose an talent</option>
@@ -71,14 +67,14 @@
         <input type="text" id="drink" name="drink" placeholder="Green Tea">
 
         <label for="specialPower">SPECIAL POWER</label>
-        <input type="text" id="specialPower" name="power" placeholder="Anti-gravity">
+        <input type="text" id="specialPower" placeholder="Anti-gravity">
 
         <label for="weapon">WEAPON OF CHOICE</label>
         <input type="text" id="weapon" name="weapon" placeholder="Lightsaber">
 
         <label for="comment">COMMENTS</label>
-        <input type="textarea" id="comment" name="comment" class="inputsBig">
-    </section>
+        <input type="text" id="comment" name="comment" class="inputsBig">
+    </form>
 
 </body>
 </html>
