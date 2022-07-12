@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="formulario">
+        <label for="n1">Número1 para suma:</label>
+        <input type="text" name="num1" id="n1">
+
+        <label for="n2">Número2:</label>
+        <input type="text" name="num2" id="n2">
+    </form>
+
+    <button onclick="sumar()">Sumar</button>
+    <button onclick="restar()">Restar</button>
+    <button onclick="multiplicar()">Multiplicar</button>
+    <button onclick="dividir()">Dividir</button>
+    <button onclick="dividirResultadoEntero()">Dividir sin decimales</button>
+    <div id="resultado"></div>
+
+    <script>
+        /*Operadores +, -, *, /, ~~(numero1/numero2)
+            Solicitar 2 números al usuario
+            Según el boton mostar el resultado
+        */
+        let numero1 = parseInt(prompt("Introduce un numero para la operación"));
+        let numero2 = parseInt(prompt("Introduce el segundo numero para la operación"));
+
+
+        let resultado = document.getElementById("resultado")
+
+       
+
+   
+
+        function sumar() {
+            // alert("El resultado de la suma de " + numero1 + " y " + numero2 + " es " + (numero1+numero2))
+
+            // resultado.innerText = "Suma: " + (numero1+numero2);
+
+            //Otra forma de solicitar datos al usuario
+            //id_formulario.name_campo.value
+            let nume1 = +formulario.num1.value;
+            let nume2 = +formulario.num2.value;
+            resultado.innerText = "Suma: " + (nume1+nume2);
+        }
+
+        function restar() {
+            // alert("El resultado de la resta de " + numero1 + " y " + numero2 + " es " + (numero1-numero2));
+
+            resultado.innerText = "Resta: " + (numero1-numero2);
+        }
+
+        function multiplicar() {
+            // alert("El resultado de la multiplicación de " + numero1 + " y " + numero2 + " es " + (numero1*numero2));
+
+            resultado.innerText = "Multiplicación: " + (numero1*numero2);
+        }
+
+        function dividir() {
+            // alert("El resultado de la división de " + numero1 + " y " + numero2 + " es " + (numero1/numero2));
+
+            resultado.innerText = "División: " + (numero1/numero2);
+        }
+
+        function dividirResultadoEntero() {
+            // alert("El resultado de la división sin decimales de " + numero1 + " y " + numero2 + " es " + (~(numero1/numero2)));
+
+            resultado.innerText = "División sin decimales: " + (~~(numero1/numero2));
+        }
+
+
+    </script>
+     
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Al pulsar el boton, detecte el evento y llame a la funcion correspondiente-->
+    <button onclick="saludar()">Mostrar saludo</button>
+    <button onclick="despedir('Pepito')">Mostrar despedida</button>
+    <script>
+        // El código de las funciones, no se ejecuta hasta que no se llama a la función
+        let nombre = prompt("Introduce tu nombre"); //Variable global, porque está fuera de una función y se puede usar en todo el código
+
+        function saludar(){
+            alert("Hola, " + nombre);
+        };
+
+        function despedir(nombre){
+            let apellido = prompt("Introduce tu apellido");; //Variable local
+            alert("Adios " + nombre + " " + apellido);
+        };
+
+    </script>
+</body>
+</html>

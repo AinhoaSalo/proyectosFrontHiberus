@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        /* *****Incrementos***** */
+        let i = 6;
+        i++;
+        console.log(i);
+
+        /* *****Decrementos***** */
+        i--;
+        console.log(i);
+        i=6
+        let j = i++; // post-incremento  primero asigno y luego incrementa j=6 i=7
+        console.log(j)
+        i=6
+        let k = ++i; // pre-incremento primero incrementa y luego asigna k=7 i=7
+
+        console.log(k, i)
+
+        /* *****Operadores aritmeticos***** */
+        let num1 = 7
+        let num2 = 2
+
+        console.log("Resto:" + num1 % num2);
+
+        /* *****Operadores relacionales***** */
+        console.log("Igualdad: " + (num1 == 7));
+        console.log("Desigualdad: " + (num1 != 7));
+        console.log("Mayor: " + (num1 > 7));
+        console.log("Mayor o igual: " + (num1 >= 7));
+        console.log("Menor: " + (num1 < 7));
+        console.log("Menor o igual: " + (num1 <= 7));
+
+        // Igualdad o desigualdad estricta
+        console.log("Igualdad: " + (num1 == '7'));
+        console.log("Igualdad estricta: " + (num1 === '7'));
+        console.log("Desigualdad: " + (num1 != '7'));
+        console.log("Desigualdad estricta: " + (num1 !== '7'));
+
+        
+        /* *****Operadores lógicos***** */
+        let nombre1 = 'Juan';
+        let nombre2 = 'Pedro';
+        console.log('AND:' + (nombre1=='Juan' && nombre2=='Pedro'));
+        console.log('AND:' + (nombre1=='juan' && nombre2=='Pedro'));
+        console.log('OR:' + (nombre1=='juan' || nombre2=='Pedro'));
+        console.log('NOT:' + !(nombre1=='juan'));
+        console.log('NOT:' + !(nombre2=='Pedro'));
+
+        /* *****Operadores bit a bit***** */
+        console.log('&:' + (7&2));
+        console.log('~:' + ~(7));
+
+        /* *****Operadores asignacón***** */
+        let numero = 4;
+        numero++;
+        numero = numero + 1;
+        numero += 1;
+
+        numero += 2;
+
+        numero -= 6; //restar
+
+        numero *= 2; // numero = numero * 2
+
+
+
+    </script>
+
+</body>
+</html>

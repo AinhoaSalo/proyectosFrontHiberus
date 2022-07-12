@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       /*Ejemplo para descargar el logo de Hiberus de una web y mostrarlo en nuestra web*/ 
+
+       // Obtener una instancia del objeto XMLHttpRequest
+       let xhr = new XMLHttpRequest();
+
+       //Preparar la petición
+       let url = "https://static.wikia.nocookie.net/esstarwars/images/e/e9/BlueYodaCookies.png/revision/latest?cb=20201207013045";
+       xhr.open("GET", url, true) //true-> peticion asincrona, false -> peticion sincrona (se intenta evitar)
+
+       //Tipo de respuesta
+       //Formatos: text, document, blob(binary large object), arraybuffe
+       xhr.responseType = "blob";
+
+       //Enviar la petición
+        //Con el método GET no hay que poner nada entre los parentesis, si fuese método POST, pondriamos lo que viaja en el body
+
+       xhr.send();
+
+       // Cuando llegue la respuesta, llamamos a la funcion procesar (Procesar la respuesta)
+
+        xhr.onload = procesar; //sin parentesis
+        
+        /*Otra opción 
+        xhr.onload = function(event){
+             if(this.status == 200){
+
+        }
+        }*/
+    
+        function procesar(event){
+            // Solo proceso si la respuesta ha llegado de forma correcta
+            if(this.status == 200){
+                // Crear la etiqueta <img> en la página
+                let img = document.createElement("img");
+                img.src = window.URL.createObjectURL(this.response);
+                document.body.appendChild(img);
+            }
+        }
+
+    </script>
+</body>
+</html>
