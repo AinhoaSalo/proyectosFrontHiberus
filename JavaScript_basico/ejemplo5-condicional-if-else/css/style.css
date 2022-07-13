@@ -1,0 +1,14 @@
+#cuadrado{
+    width: 50%;
+    height: 150px;
+    background-color: darkgray;
+    margin: 50px;
+}
+
+.sombra{
+    box-shadow: 10px 20px 10px pink;
+}
+
+.restaurar{
+    box-shadow: none;
+}
