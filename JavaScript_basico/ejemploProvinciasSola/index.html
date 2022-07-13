@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- crear un select donde cargamos las provincias que tenemos en un array con onload()
+    let nombresProvincias = ['Zaragoza', 'Huesca, 'Madrid']
+
+    Cuando el usuario seleccione una provincia, cargar el select de las poblaciones
+    'Zaragoza', 'Tauste', 'Ejea de los Caballeros'.
+    'Barbastro', 'Jaca', 'Sabiñanigo'.
+    'Las Rozas', 'Torrejon', 'Alcobendas'.
+
+    usar evento onchange 
+    
+    document.getElementById("provincias").value
+    -->
+    <form>
+        <label for="provincias">Provincia: </label>
+        <select name="provincia" id="provincias" onchange="selectPoblacion()">
+            <option disabled="disable" selected="selected" > Selecciona provincia</option>
+        </select>
+
+        <label for="poblaciones">Población: </label>
+        <select name="poblacion" id="poblaciones">
+            <option disabled="disable" selected="selected"> Selecciona población</option>
+        </select>
+    </form>
+
+    <script src="./js/code.js"></script>
+</body>
+</html>
