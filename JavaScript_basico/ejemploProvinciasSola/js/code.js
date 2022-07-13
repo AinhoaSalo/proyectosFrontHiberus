@@ -1,15 +1,16 @@
+/*Hago que genere el primer select ->*/ 
 let nombresProvincias = ['Zaragoza', 'Huesca', 'Madrid'];
 
 for (const i in nombresProvincias) {
    document.getElementById('provincias').innerHTML += `<option value="${nombresProvincias[i]}"> ${nombresProvincias[i]}</option>`;
 }
 
+/*Función para añadir el segundo desplegable una vez seleccionada provincia ->*/ 
 function selectPoblacion() {
     let value = document.getElementById("provincias").value;
      
     /* Código compi David ->*/
     document.getElementById('poblaciones').options.length = 0;
-    /* <- código compi David*/
 
     /* Código profesora -> */
     let opcion = new Option('Selecciona');
@@ -32,10 +33,9 @@ function selectPoblacion() {
         let madridList = ['Las Rozas', 'Torrejon', 'Alcobendas'];
         forPoblacion(madridList)
     }
-
-    
 }
 
+/*Función global para añadir el html en el if de selectPoblacion() ->*/
 function forPoblacion (params) {
     let poblacion = document.getElementById('poblaciones');
 
