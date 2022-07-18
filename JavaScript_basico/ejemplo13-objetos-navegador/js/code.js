@@ -9,6 +9,7 @@ function mostrar() {
     
     //screen
     document.write('Resolucion: ', screen.width, 'x', screen.height, '<br/>')
+    document.write('Resolucion real:')
     
     //url
     document.write('URL: ', location.pathname, '<br/>')
