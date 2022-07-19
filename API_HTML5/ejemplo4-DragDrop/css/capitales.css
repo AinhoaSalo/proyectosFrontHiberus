@@ -1,0 +1,19 @@
+#inicio{
+    padding: 5px 0;
+    width: 60px;
+    height: 100px;
+    background-color: bisque;
+}
+
+.contenedor{
+    width: 200px;
+    height: 200px;
+    float: right;
+    margin: 20px;
+    text-align: center;
+    background-color: rgb(159, 180, 159);
+}
+
+
+
+

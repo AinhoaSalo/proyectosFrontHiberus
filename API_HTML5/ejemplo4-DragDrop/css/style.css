@@ -1,0 +1,12 @@
+#contenedor{
+    width: 300px;
+    height: 200px;
+    float: right;
+    background-color: blanchedalmond;
+}
+
+#inicio{
+    width: 200px;
+    height: 20px;
+    float: left;
+}
